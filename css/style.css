@@ -1,0 +1,626 @@
+* {
+  box-sizing: border-box;
+}
+
+/* GENERAL */
+body {
+  font-family: 'montserrat', sans-serif;
+  color: #36154c;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vh;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+/* NAV STUFF */
+nav {
+  width: 100%;
+  overflow: hidden;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+nav a:link {
+  color: white;
+  background: #daba4e;
+  height: 60px;
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+nav a:visited {
+  color: white;
+  background: #daba4e;
+}
+
+nav a:hover {
+  color: #312E34;
+  background: #b796f7;
+}
+
+nav a:active {
+  color: white;
+  background: #282F3A;
+  border: 1px solid #282F3A;
+}
+
+nav a.active {
+  color: #312E34;
+  background: #D8FF00;
+  border: 1px solid #D8FF00;
+}
+
+/* MAKING THE NAVBAR STICKY */
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  Top: 0;
+  width: 100%;
+}
+
+/* TYPOGRAPHY */
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 8.5vh;
+  line-height: 10vh;
+  padding:0;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  text-align: left;
+  font-size: 5vh;
+  line-height: 5vh;
+  margin-top:0;
+}
+
+a {
+  color: #36154c;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+
+a:hover {
+  color: #b796f7;
+}
+
+
+span {
+  font-weight: 600;
+}
+
+.left {
+  font-size: 2.5vh;
+  text-align: left;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.intro {
+  margin-top: 5%;
+}
+
+.instruction {
+  color: #b796f7;
+  font-size: 2.5vh;
+  font-weight: 600;
+  margin-top: 15%;
+}
+
+.bubble {
+  padding: 3%;
+  background: #f9f9f9;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+
+.q {
+  font-size: 2.5vh;
+  line-height: 1;
+  text-align: left;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  color: #36154c;
+}
+
+.highlight {
+  color: #b796f7;
+}
+
+.light {
+color: white;
+}
+
+.thin {
+font-weight: 300;
+}
+
+.serif {
+font-family: 'Lora', serif;
+font-size: 3vh;
+}
+
+.small {
+font-size: 2.5vh;
+}
+
+.underline {
+text-decoration: underline;}
+
+.credits {
+color: White;
+padding: 0;
+margin:0;
+text-align: left;
+}
+
+.dark {
+background-color: #36154c;
+color: white;
+}
+
+/* IMAGES */
+.bgimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100vh;
+  background: url("../images/background.svg") no-repeat center center;
+  background-size: cover;
+}
+
+aside img {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  padding:0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/* SECTIONS */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-left: 17%;
+  padding-right: 17%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+#landing {
+}
+
+#recognize {
+  background-color: white;
+}
+
+#react {
+  background-color: #e6dcfd;
+}
+
+#report {
+  background-color: #36154c;
+}
+
+#faq {
+  background-color: #e6dcfd;
+}
+
+.row {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content:  space-around;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 45%;
+  margin-right: 10%;
+}
+
+
+main {
+vertical-align: middle;
+}
+
+.main {
+  flex: 45%;
+}
+
+
+/* SECTION SPECIFICS */
+
+.nomargin {
+margin:0;
+}
+
+.tricks {
+  text-align: left;
+  font-size: 2.5vh;
+  padding: 5%;
+  margin-top: 10%;
+  background: #e6dcfd;
+  border-radius: 10px;
+}
+
+
+/* FORM */
+.form-group {
+  margin-top: 5%;
+}
+
+.form {
+  /* max-width: 320px; */
+  /* margin: 32px auto; */
+}
+
+input {
+  font-family: 'montserrat', sans-serif;
+  font-size: 2.25vh;
+  border: 0px solid #36154c;
+  margin-bottom: 5%;
+  padding: 5%;
+  width: 100%;
+  border-radius: 10px;
+  color: #36154c;
+  background-color: white;
+}
+
+input[type="file"] {
+  padding:0;
+  margin:0;
+  border: 0;
+}
+
+.custom-file-upload {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #36154c;
+    text-decoration: underline;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 0;
+}
+
+
+.noborder {
+  border: 0;
+  font-family: 'montserrat', sans-serif;
+  background-color: inherit;
+  border-radius: 0;
+}
+
+
+/* BUTTONS */
+.buttonleft {
+display:flex;
+flex-direction: row;
+align-items: flex-start;
+}
+
+button {
+  font-family: 'montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background: #36154c;
+  height: 60px;
+  width: 150px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  transition: all 0.5s;
+  border: 0;
+  margin-top: 5%;
+
+}
+
+button:hover {
+  color: #312E34;
+  background: #b796f7;
+}
+
+/* FOOTER */
+footer {
+background-color: #b796f7;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+flex-wrap: wrap;
+padding-left: 5%;
+padding-right: 5%;
+}
+
+
+/* TABLET STYLES */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+
+  .bgimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100vh;
+  background: url("../images/tablet_bg.svg") no-repeat center center;
+  background-size: cover;
+  }
+
+
+    /* TYPOGRAPHY */
+    h1 {
+    font-size: 45px;
+    line-height: 50px;
+    }
+
+    h2 {
+    font-size: 35px;
+    line-height: 35px;
+    }
+
+    body {
+    font-size: 20px;
+    line-height: 29px;
+    }
+
+    p  {
+    font-size: 20px;
+    line-height: 29px;
+    }
+
+    .q {
+    font-size: 20px;
+    line-height: 23px;
+    }
+
+    span {
+      font-size: 20px;
+    line-height: 29px;
+    }
+
+    .left  {
+    font-size: 20px;
+    line-height: 29px;
+    }
+
+    .intro {
+    font-size: 20px;
+    line-height: 29px;
+    }
+
+    .instruction {
+    font-size: 20px;
+    }
+
+    .serif {
+    font-size: 22px;
+    line-height: 29px;
+    }
+
+    /* ROWS */
+    .row {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+    }
+
+    .side {order:1;}
+    .main {order:2;}
+
+    /* OTHER */
+    section  {
+      padding-left: 6%;
+      padding-right: 6%;
+    }
+
+
+    .tricks {
+      margin-bottom: 360px;
+      margin-top:40px;
+    }
+
+    .last {
+    margin-bottom: 30px;
+    }
+
+    .general {
+        margin-bottom: 360px;
+    }
+
+    aside img {
+      margin: 0;
+      padding:30px;
+      width: 70%;
+      position: relative;
+    }
+
+    aside {
+    height: -30;
+  }
+
+    .hidelater {
+    display: none;
+    }
+
+    .side {
+    margin-right: 0;
+    }
+
+    .bubble {
+    padding: 20px;
+    overflow-x: scroll;
+    }
+
+  .form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+   }
+
+}
+
+
+
+
+  /* MOBILE STYLES*/
+    @media only screen and (max-width: 500px) {
+
+  /* IMAGE */
+  .bgimg {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100vh;
+  background: url("../images/phone_bg.svg") no-repeat center center;
+  background-size: cover;
+  }
+
+
+  /* TYPOGRAPHY */
+  h1 {
+  font-size: 45px;
+  line-height: 50px;
+  }
+
+  h2 {
+  font-size: 35px;
+  line-height: 35px;
+  }
+
+  body {
+  font-size: 20px;
+  line-height: 29px;
+  }
+
+  p  {
+  font-size: 20px;
+  line-height: 29px;
+  }
+
+  .q {
+  font-size: 20px;
+  line-height: 23px;
+  }
+
+  span {
+    font-size: 20px;
+  line-height: 29px;
+  }
+
+  .left  {
+  font-size: 20px;
+  line-height: 29px;
+  }
+
+  .intro {
+  font-size: 20px;
+  line-height: 29px;
+  }
+
+  .instruction {
+  font-size: 20px;
+  }
+
+  .serif {
+  font-size: 22px;
+  line-height: 29px;
+  }
+
+  /* ROWS */
+  .row {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .side {order:1;}
+  .main {order:2;}
+
+  /* OTHER */
+  section  {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  nav {
+  display: none;
+  }
+
+  .tricks {
+    margin-bottom: 360px;
+    margin-top:40px;
+  }
+
+  .last {
+  margin-bottom: 30px;
+  }
+
+  .general {
+      margin-bottom: 360px;
+  }
+
+  aside img {
+    margin: 0;
+    padding:0;
+    width: 90%;
+    position: relative;
+  }
+
+  aside {
+  height: -30;
+}
+
+  .hidelater {
+  display: none;
+  }
+
+  .side {
+  margin-right: 0;
+  }
+
+  .bubble {
+  padding: 20px;
+  overflow-x: scroll;
+  }
+
+.form {
+padding-top: 40px;
+padding-bottom: 40px;
+ }
+
+  */
